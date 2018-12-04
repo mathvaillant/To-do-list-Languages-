@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heutiger Zeitplan</title>
+	<!-- Website's Stylesheet -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!-- Bootstrap 4 CSS CDN -->
+	<link rel="stylesheet" type="text/css" href="assets/css/todos.css">
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- jQuery CDN -->
+	<script type="text/javascript" src="assets/js/lib/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<!-- Set App Language -->
+<div class="container lang-set mt-3">
+	<div class="row justify-content-around">
+		<a href="index.br.html"><img class="icon" src="icons/br.png" alt="br.pgn"></a>
+		<a href="index.spanish.html"><img class="icon" src="icons/spain.png" alt="spain.pgn"></a>
+		<a href="index.eng.html"><img class="icon" src="icons/eng.png" alt="eng.pgn"></a>
+		<!-- DEFAULT IS IN GERMAN -->
+		<a href="index.html"><img class="icon" src="icons/germany.png" alt="germany.pgn"></a>
+		<!-- DEFAULT IS IN GERMAN -->
+		<a href="index.russia.html"><img class="icon" src="icons/russia.png" alt="russia.pgn"></a>
+	</div>
+</div>
+
+<!-- To-do Today -->
+<div id="to-do" class="container mt-3 p-0">
+	<h1>Heutiger Zeitplan<i class="fas fa-caret-square-down"></i><i class="fas fa-caret-square-up mr-3"></i></h1>
+	<input type="text" placeholder="Was wollen sie heute machen?">
+
+	<ul id="ul-todo">
+		<!-- Add New Todo (li) -->
+	</ul>
+</div>
+
+<!-- Already done today -->
+<div id="done" class="container p-0">
+	<h1>Heute gemacht</h1>
+
+	<ul id="ul-done">
+		<!-- Done things (li) -->
+	</ul>
+</div>
+
+<!-- Restart Button -->
+<div class="container">
+	<div class="row justify-content-center">
+		<button id="reset" class="btn btn-dark rounded-0 border-0 px-3 py-2">Neustart</button>
+	</div>
+</div>
+
+<!-- jQuery -->
+<script type="text/javascript" src="assets/js/todos.js"></script>
+</body>
+</html>
